@@ -1,4 +1,5 @@
 {
   "type": "PTE",
-  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main"
+  "templateUrl": "https://github.com/freddydk/AL-Go@customize",
+  "templateSha": "525048b6aab1204cdd927f844212acd0aea1b04c"
 }
