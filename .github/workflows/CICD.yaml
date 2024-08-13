@@ -319,7 +319,7 @@ jobs:
           artifacts: '.artifacts'
 
   PostProcess:
-    needs: [ Initialization, Build, Deploy, Deliver, DeployALDoc ]
+    needs: [ Initialization, Build, Deploy, Deliver, DeployALDoc, CustomJob-CreateBuildTag ]
     if: (!cancelled())
     runs-on: [ windows-latest ]
     steps:
@@ -335,3 +335,13 @@ jobs:
           shell: powershell
           telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
           currentJobContext: ${{ toJson(job) }}
+
+  CustomJob-CreateBuildTag:
+    name: Create Build Tag
+    needs: [ Initialization, Build ]
+    if: (!cancelled()) && (needs.Build.result == 'success')
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - name: Create Tag
+        run: |
+          Write-Host "Create Tag"
