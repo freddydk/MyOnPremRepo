@@ -1,7 +1,7 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/freddydk/MyOnPremTemplate@main",
-  "templateSha": "95d913ee716fa72da81bbf70fe399632b0bb46fe",
+  "templateSha": "678fdd04466911f967e34c4b7e9396cf24f9b85f",
   "unusedALGoSystemFiles": [
     "AddExistingAppOrTestApp.yaml",
     "CreateApp.yaml",
