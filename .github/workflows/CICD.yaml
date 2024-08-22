@@ -352,5 +352,6 @@ jobs:
     runs-on: [ ubuntu-latest ]
     steps:
       - name: Create Tag
+        shell: pwsh
         run: |
           Write-Host "Create Tag"
