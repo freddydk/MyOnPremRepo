@@ -1,12 +1,5 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/freddydk/MyOnPremTemplate@main",
-  "templateSha": "678fdd04466911f967e34c4b7e9396cf24f9b85f",
-  "unusedALGoSystemFiles": [
-    "AddExistingAppOrTestApp.yaml",
-    "CreateApp.yaml",
-    "CreatePerformanceTestApp.yaml",
-    "CreateTestApp.yaml",
-    "cloudDevEnv.ps1"
-  ]
+  "templateSha": "678fdd04466911f967e34c4b7e9396cf24f9b85f"
 }
